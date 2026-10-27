@@ -7,7 +7,8 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview --host",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "vite build && npx --yes wrangler pages deploy dist --project-name centerstagepy --branch main --commit-dirty=true",
+    "deploy:github": "vite build && gh-pages -d dist"
   },
   "devDependencies": {
     "vite": "^7.1.0",

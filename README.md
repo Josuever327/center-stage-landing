@@ -8,6 +8,6 @@ npm run dev      # local
 npm run build    # genera dist/
 ```
 
-Publicar en GitHub Pages: `npm run deploy` (compila y sube `dist/` a la rama `gh-pages`).
+Publicar: `npm run deploy` (Cloudflare Pages, proyecto `centerstagepy`). Copia en GitHub Pages: `npm run deploy:github`.
 
-Online: https://josuever327.github.io/center-stage-landing/
+Online: https://centerstagepy.pages.dev
