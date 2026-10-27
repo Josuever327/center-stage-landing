@@ -411,3 +411,10 @@ h3 { font-family: var(--display); font-size: 1.25rem; margin-bottom: 8px; }
   .rep { padding: 22px; }
   .big-cta .btn { width: 100%; }
 }
+.game.logo.ml {
+  background:
+    radial-gradient(circle at 50% 38%, rgba(255, 150, 30, .45), transparent 55%),
+    radial-gradient(circle at 20% 90%, rgba(139, 92, 246, .55), transparent 60%),
+    linear-gradient(160deg, #1b1240, #0a0718);
+}
+.game.logo.ml img { padding: 4% 4% 30%; transform: scale(1.08); filter: drop-shadow(0 0 14px rgba(255, 140, 20, .6)); }
