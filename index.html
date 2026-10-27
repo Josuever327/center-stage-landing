@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Center Stage 2026 · Smash Club Paraguay</title>
-  <meta name="description" content="Center Stage 2026: el torneo insignia de Smash Club Paraguay. 14 y 15 de noviembre en EON Play, Asunción. Smash, Street Fighter 6, Tekken 8, Mortal Kombat 1, Valorant y más." />
+  <meta name="description" content="Center Stage 2026: el torneo insignia de Smash Club Paraguay. 14 y 15 de noviembre en EON Play, Asunción. Open Doors de 12 a 22 hs. Smash Ultimate, Street Fighter 6, Tekken 8, Mortal Kombat, Mobile Legends, Clash Royale y más." />
   <meta property="og:title" content="Center Stage 2026 · 14 y 15 de noviembre" />
   <meta property="og:description" content="Dos días de competencia gamer de alto nivel en EON Play, Asunción." />
   <meta name="theme-color" content="#0d0a16" />
@@ -21,12 +21,13 @@
     <a href="#inicio" class="brand"><span class="brand-mark"></span>CENTER STAGE</a>
     <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
     <nav class="nav-links">
-      <a href="#evento">El evento</a>
       <a href="#torneos">Torneos</a>
       <a href="#invitados">Invitados</a>
-      <a href="#sede">Sede</a>
+      <a href="#stands">Stands</a>
       <a href="#sponsors">Sponsors</a>
-      <a href="#contacto" class="btn btn-sm">Contacto</a>
+      <a href="#representantes">Representantes</a>
+      <a href="#sede">Sede</a>
+      <a class="btn btn-sm" data-inscripcion>Inscribirme</a>
     </nav>
   </header>
 
@@ -39,6 +40,7 @@
       <p class="hero-sub">Dos días de competencia gamer de alto nivel, streaming en vivo y la comunidad más activa del país.</p>
       <div class="hero-meta">
         <div><strong>14 y 15</strong><span>de noviembre</span></div>
+        <div><strong>12 a 22 hs</strong><span>Open Doors</span></div>
         <div><strong>EON Play</strong><span>Asunción, Paraguay</span></div>
       </div>
       <div class="countdown" id="countdown" aria-live="polite">
@@ -48,7 +50,7 @@
         <div><b data-u="s">--</b><span>seg</span></div>
       </div>
       <div class="hero-cta">
-        <a href="https://www.instagram.com/centerstagepy" target="_blank" rel="noopener" class="btn">Seguinos en Instagram</a>
+        <a class="btn" data-inscripcion>Inscribirme a los torneos</a>
         <a href="#sponsors" class="btn btn-ghost">Quiero ser sponsor</a>
       </div>
       <div class="stripes" aria-hidden="true"></div>
@@ -67,7 +69,7 @@
       </div>
 
       <div class="stats">
-        <div class="stat"><b>2</b><span>días de competencia</span></div>
+        <div class="stat"><b>10</b><span>torneos en 2 días</span></div>
         <div class="stat"><b>300</b><span>personas por día, rotación de hasta 500</span></div>
         <div class="stat"><b>25</b><span>estaciones de juego + escenario principal</span></div>
         <div class="stat"><b>+180K</b><span>seguidores combinados de invitados</span></div>
@@ -78,15 +80,42 @@
     <section id="torneos" class="section">
       <p class="eyebrow">Torneos confirmados</p>
       <h2>Las disciplinas</h2>
-      <ul class="games">
-        <li><span>01</span>Super Smash Bros. Ultimate</li>
-        <li><span>02</span>Street Fighter 6</li>
-        <li><span>03</span>Mortal Kombat 1</li>
-        <li><span>04</span>Tekken 8</li>
-        <li><span>05</span>Dragon Ball: Tenkaichi 3</li>
-        <li><span>06</span>Valorant</li>
-        <li class="more"><span>+</span>Y más disciplinas</li>
-      </ul>
+      <p class="lead narrow">10 torneos en dos días. <strong>Open Doors de 12 a 22 hs</strong> el sábado y el domingo.</p>
+
+      <div class="day-tabs" role="tablist">
+        <button role="tab" class="on" aria-selected="true" data-dia="sabado">Sábado 14</button>
+        <button role="tab" aria-selected="false" data-dia="domingo">Domingo 15</button>
+      </div>
+
+      <div class="day" data-dia="sabado">
+        <h3 class="day-title">Sábado 14 de noviembre</h3>
+        <ul class="games">
+          <li class="game"><img src="/juegos/mobile-legends.jpg" alt="" loading="lazy" /><b>Mobile Legends</b></li>
+          <li class="game"><img src="/juegos/marvel-tokon.jpg" alt="" loading="lazy" /><b>Marvel Tōkon</b></li>
+          <li class="game"><img src="/juegos/mk1.jpg" alt="" loading="lazy" /><b>Mortal Kombat 1</b></li>
+          <li class="game"><img src="/juegos/umk3.png" alt="" loading="lazy" /><b>Mortal Kombat 3 Ultimate</b></li>
+          <li class="game"><img src="/juegos/smash-ultimate.jpg" alt="" loading="lazy" /><b>Smash Ultimate</b><small>Singles</small></li>
+        </ul>
+      </div>
+
+      <div class="day" data-dia="domingo">
+        <h3 class="day-title">Domingo 15 de noviembre</h3>
+        <ul class="games">
+          <li class="game logo"><img src="/juegos/clash-royale.png" alt="" loading="lazy" /><b>Clash Royale</b></li>
+          <li class="game"><img src="/juegos/sf6.jpg" alt="" loading="lazy" /><b>Street Fighter 6</b></li>
+          <li class="game"><img src="/juegos/tekken8.jpg" alt="" loading="lazy" /><b>Tekken 8</b></li>
+          <li class="game"><img src="/juegos/dbz-bt3.jpg" alt="" loading="lazy" /><b>Dragon Ball Budokai Tenkaichi 3</b></li>
+          <li class="game"><img src="/juegos/smash-ultimate.jpg" alt="" loading="lazy" /><b>Smash Ultimate</b><small>Singles y dobles</small></li>
+        </ul>
+      </div>
+
+      <div class="inscripcion">
+        <div>
+          <b>¿Vas a competir?</b>
+          <span>Anotate en el formulario oficial y elegí tus torneos.</span>
+        </div>
+        <a class="btn btn-lg" data-inscripcion>Inscribirme</a>
+      </div>
     </section>
 
     <!-- EXPERIENCIA -->
@@ -132,13 +161,65 @@
       <p class="lead narrow">Su presencia amplifica el alcance de Center Stage en redes sociales y transmisiones en vivo.</p>
       <div class="guests">
         <article class="guest">
-          <div class="avatar">PP</div>
+          <div class="avatar" data-ini="PP"><img src="/invitados/pablo-pulisich.jpg" alt="Pablo Pulisich" loading="lazy" /></div>
           <div><h3>Pablo Pulisich</h3><p class="alias">"Smashu Flashu"</p><p>Caster oficial del evento · Comentarista</p><b class="followers">+120.000 seguidores</b></div>
         </article>
         <article class="guest">
-          <div class="avatar alt">SP</div>
+          <div class="avatar alt" data-ini="SP"><img src="/invitados/santiago-perez.jpg" alt="Santiago Pérez" loading="lazy" /></div>
           <div><h3>Santiago Pérez</h3><p class="alias">"Chag"</p><p>Jugador profesional · Competidor</p><b class="followers">+60.000 seguidores</b></div>
         </article>
+      </div>
+      <p class="combined">+180.000 seguidores combinados amplificando tu marca</p>
+    </section>
+
+    <!-- STANDS -->
+    <section id="stands" class="section">
+      <p class="eyebrow">Distribución del venue</p>
+      <h2>Stands y zonas de sponsor</h2>
+      <p class="lead narrow">11 zonas de sponsors distribuidas alrededor de la arena, con hasta 400 personas simultáneas circulando.</p>
+      <div class="two-col stands-wrap">
+        <figure class="plano">
+          <svg viewBox="0 0 400 300" role="img" aria-label="Plano ilustrativo del venue con las áreas de stands">
+            <rect x="4" y="4" width="392" height="292" rx="14" class="pl-borde" />
+            <rect x="130" y="16" width="140" height="56" rx="8" class="pl-escenario" />
+            <text x="200" y="40" class="pl-t">ESCENARIO</text>
+            <text x="200" y="58" class="pl-s">pantallas · transmisión</text>
+            <rect x="110" y="96" width="180" height="120" rx="10" class="pl-arena" />
+            <text x="200" y="150" class="pl-t">ZONA ESTACIONES</text>
+            <text x="200" y="168" class="pl-s">25 estaciones de juego</text>
+            <g class="pl-dia">
+              <rect x="16" y="16" width="80" height="40" rx="6" /><text x="56" y="41">1</text>
+              <rect x="16" y="66" width="80" height="40" rx="6" /><text x="56" y="91">2</text>
+              <rect x="16" y="116" width="80" height="40" rx="6" /><text x="56" y="141">3</text>
+              <rect x="16" y="166" width="80" height="40" rx="6" /><text x="56" y="191">4</text>
+              <rect x="16" y="216" width="80" height="40" rx="6" /><text x="56" y="241">5</text>
+            </g>
+            <g class="pl-oro">
+              <rect x="304" y="96" width="80" height="34" rx="6" /><text x="344" y="118">6</text>
+              <rect x="304" y="138" width="80" height="34" rx="6" /><text x="344" y="160">7</text>
+              <rect x="304" y="180" width="80" height="34" rx="6" /><text x="344" y="202">8</text>
+              <rect x="304" y="222" width="80" height="34" rx="6" /><text x="344" y="244">9</text>
+            </g>
+            <rect x="130" y="232" width="140" height="48" rx="8" class="pl-gastro" />
+            <text x="200" y="261" class="pl-s">gastronomía · descanso</text>
+            <text x="56" y="282" class="pl-s">ingreso ↓</text>
+          </svg>
+          <figcaption>Plano ilustrativo. Áreas 1–5 junto al ingreso (exposición interna y externa).</figcaption>
+        </figure>
+        <div class="stand-info">
+          <div class="legend">
+            <span><i class="sw dia"></i>Áreas 1 a 5 · <b>Stand Diamante</b></span>
+            <span><i class="sw oro"></i>Áreas 6 a 9 · <b>Stand Oro</b></span>
+          </div>
+          <ul class="facts">
+            <li><span>Medida de cada stand</span>2,5 m × 1,8 m</li>
+            <li><span>Incluye</span>1 tablón con mantel negro y 1 toma eléctrica</li>
+            <li><span>Difusión</span>Mención en redes sociales previa al evento</li>
+            <li><span>Superficie</span>137 m² + 116 m² + 100 m² de zonas de sponsor</li>
+            <li><span>Horario</span>Open Doors de 12 a 22 hs, sábado y domingo</li>
+          </ul>
+          <a href="#sponsors" class="btn btn-block">Ver precios</a>
+        </div>
       </div>
     </section>
 
@@ -211,18 +292,35 @@
       <div class="plans-dots" aria-hidden="true"><button class="on"></button><button></button><button></button></div>
     </section>
 
+    <!-- REPRESENTANTES -->
+    <section id="representantes" class="section">
+      <p class="eyebrow">Smash Club Paraguay</p>
+      <h2>Representantes</h2>
+      <p class="lead narrow">Hablá directo con quienes organizan Center Stage para sponsoreo, stands o alianzas.</p>
+      <div class="reps">
+        <article class="rep">
+          <div class="avatar" data-ini="CE"><img src="/representantes/carlos-esgaib.jpg" alt="Carlos Esgaib" loading="lazy" /></div>
+          <h3>Carlos Esgaib</h3>
+          <p>Presidente — Smash Club Paraguay</p>
+          <a class="btn btn-wa btn-block" href="https://wa.me/595972179261" target="_blank" rel="noopener">WhatsApp 0972 179 261</a>
+        </article>
+        <article class="rep">
+          <div class="avatar alt" data-ini="FO"><img src="/representantes/fernando-ostertag.jpg" alt="Fernando Ostertag" loading="lazy" /></div>
+          <h3>Fernando Ostertag</h3>
+          <p>Tesorero — Smash Club Paraguay</p>
+          <a class="btn btn-wa btn-block" href="https://wa.me/595981991187" target="_blank" rel="noopener">WhatsApp 0981 991 187</a>
+        </article>
+      </div>
+    </section>
+
     <!-- CONTACTO -->
     <section id="contacto" class="section cta-final">
-      <p class="eyebrow">Sumate como sponsor</p>
-      <h2>de Center Stage 2026</h2>
-      <p class="lead">14 y 15 de noviembre · EON Play, Asunción</p>
-      <div class="contacts">
-        <a class="contact" href="https://wa.me/595972179261" target="_blank" rel="noopener">
-          <b>Carlos Esgaib</b><span>Presidente — Smash Club Paraguay</span><em>WhatsApp 0972 179 261</em>
-        </a>
-        <a class="contact" href="https://wa.me/595981991187" target="_blank" rel="noopener">
-          <b>Fernando Ostertag</b><span>Tesorero — Smash Club Paraguay</span><em>WhatsApp 0981 991 187</em>
-        </a>
+      <p class="eyebrow">Nos vemos en la arena</p>
+      <h2>Center Stage 2026</h2>
+      <p class="lead">14 y 15 de noviembre · Open Doors 12 a 22 hs · EON Play, Asunción</p>
+      <div class="hero-cta big-cta">
+        <a class="btn btn-lg" data-inscripcion>Inscribirme a los torneos</a>
+        <a href="#sponsors" class="btn btn-ghost btn-lg">Quiero ser sponsor</a>
       </div>
       <div class="hero-cta">
         <a href="mailto:smashclubpy@gmail.com" class="btn btn-ghost">smashclubpy@gmail.com</a>
@@ -233,7 +331,7 @@
   </main>
 
   <div class="mobile-bar" id="mobileBar">
-    <a href="#sponsors" class="btn btn-ghost">Ser sponsor</a>
+    <a class="btn" data-inscripcion>Inscribirme</a>
     <a class="btn btn-wa" data-wa="Hola! Quiero info sobre Center Stage 2026">WhatsApp</a>
   </div>
 
