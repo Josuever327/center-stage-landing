@@ -90,3 +90,12 @@ document.querySelectorAll('.section > *').forEach((el) => {
   el.classList.add('reveal');
   io.observe(el);
 });
+
+// Datos de transferencia: tocar para copiar
+document.querySelectorAll('[data-copiar]').forEach((b) => {
+  b.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(b.dataset.copiar); } catch { return; }
+    b.classList.add('ok');
+    setTimeout(() => b.classList.remove('ok'), 1500);
+  });
+});

@@ -418,3 +418,13 @@ h3 { font-family: var(--display); font-size: 1.25rem; margin-bottom: 8px; }
     linear-gradient(160deg, #1b1240, #0a0718);
 }
 .game.logo.ml img { padding: 4% 4% 30%; transform: scale(1.08); filter: drop-shadow(0 0 14px rgba(255, 140, 20, .6)); }
+
+/* Datos de transferencia */
+.pago { margin-top: 18px; padding: 22px 26px; border-radius: var(--radius); border: 1px solid rgba(139, 92, 246, .45); background: rgba(139, 92, 246, .08); }
+.pago-head b { display: block; font-family: var(--display); font-size: 1.2rem; }
+.pago-head span { color: var(--muted); }
+.pago .facts { margin: 14px 0 8px; }
+.pago .muted { font-size: .9rem; margin: 0; }
+.copiar { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline dotted; text-underline-offset: 3px; overflow-wrap: anywhere; text-align: left; }
+.copiar.ok::after { content: ' ✓ copiado'; color: #25d366; font-size: .85em; }
+@media (max-width: 640px) { .pago { padding: 18px; } }
