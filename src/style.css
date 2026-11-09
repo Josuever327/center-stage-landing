@@ -428,3 +428,30 @@ h3 { font-family: var(--display); font-size: 1.25rem; margin-bottom: 8px; }
 .copiar { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline dotted; text-underline-offset: 3px; overflow-wrap: anywhere; text-align: left; }
 .copiar.ok::after { content: ' ✓ copiado'; color: #25d366; font-size: .85em; }
 @media (max-width: 640px) { .pago { padding: 18px; } }
+
+/* Actualización según Instagram (@centerstagepy) */
+.badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin: -10px 0 26px; }
+.badge { padding: 5px 12px; border-radius: 99px; font-size: .8rem; font-family: var(--display); letter-spacing: .04em; background: rgba(255, 46, 136, .14); border: 1px solid rgba(255, 46, 136, .45); }
+.extra { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 36px; }
+.extra a { color: var(--pink); }
+.entradas { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 32px; margin-top: 18px; padding: 20px 24px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); }
+.entradas span { display: block; font-size: .75rem; text-transform: uppercase; letter-spacing: .15em; color: var(--pink); }
+.entradas b { font-family: var(--display); font-size: 1.6rem; }
+.entradas .btn { margin-left: auto; }
+.guest a.followers:hover { text-decoration: underline; }
+.h3-plain.sub { margin-top: 44px; }
+.players { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.players li { padding: 14px 18px; background: var(--card); border: 1px solid var(--line); border-left: 3px solid var(--purple); border-radius: 12px; }
+.players b { display: block; font-family: var(--display); font-size: 1.1rem; }
+.players span { color: var(--muted); font-size: .88rem; }
+.aliados { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.aliados .tags a:hover { color: var(--pink); }
+@media (max-width: 960px) { .players { grid-template-columns: 1fr 1fr; } .aliados { grid-template-columns: 1fr; } }
+@media (max-width: 760px) {
+  .extra { grid-template-columns: 1fr; }
+  .entradas { padding: 16px; }
+  .entradas .btn { margin-left: 0; width: 100%; text-align: center; }
+  .players { grid-template-columns: 1fr; gap: 8px; }
+  .players li { padding: 12px 14px; }
+  .guests { grid-template-columns: 1fr; }
+}
