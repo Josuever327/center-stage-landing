@@ -455,3 +455,10 @@ h3 { font-family: var(--display); font-size: 1.25rem; margin-bottom: 8px; }
   .players li { padding: 12px 14px; }
   .guests { grid-template-columns: 1fr; }
 }
+
+/* Horarios por torneo */
+.game .hora { position: absolute; top: 10px; left: 10px; z-index: 1; padding: 3px 9px; border-radius: 8px; font-family: var(--display); font-weight: 700; font-size: .85rem; background: rgba(8, 6, 14, .85); border: 1px solid var(--diamond); color: #fff; }
+.aviso { display: flex; gap: 10px; align-items: flex-start; max-width: 720px; margin: -16px 0 32px; padding: 14px 18px; border-radius: 12px; background: rgba(124, 200, 245, .08); border: 1px solid rgba(124, 200, 245, .35); color: var(--muted); }
+.hora-inline { display: inline-block; margin-left: 6px; padding: 2px 8px; border-radius: 8px; font-size: .78rem; vertical-align: middle; background: rgba(255, 46, 136, .16); color: #fff; }
+@media (max-width: 760px) { .aviso { margin: -8px 0 24px; font-size: .92rem; } }
+.game .hora ~ b ~ small { top: 44px; left: 10px; right: auto; max-width: calc(100% - 20px); }
