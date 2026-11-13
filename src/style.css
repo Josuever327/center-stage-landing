@@ -462,3 +462,10 @@ h3 { font-family: var(--display); font-size: 1.25rem; margin-bottom: 8px; }
 .hora-inline { display: inline-block; margin-left: 6px; padding: 2px 8px; border-radius: 8px; font-size: .78rem; vertical-align: middle; background: rgba(255, 46, 136, .16); color: #fff; }
 @media (max-width: 760px) { .aviso { margin: -8px 0 24px; font-size: .92rem; } }
 .game .hora ~ b ~ small { top: 44px; left: 10px; right: auto; max-width: calc(100% - 20px); }
+
+/* Logos de aliados */
+.aliados .tags li, .aliados .tags a { display: inline-flex; align-items: center; gap: 8px; }
+.aliados .tags li { padding-left: 8px; }
+.aliados .tags img, .aliados .tags .ini { width: 26px; height: 26px; flex: none; border-radius: 50%; object-fit: cover; background: #fff; }
+.aliados .tags .ini { display: grid; place-items: center; font-family: var(--display); font-size: .7rem; font-weight: 700; background: var(--pink); color: #fff; }
+@media (max-width: 760px) { .aliados .tags img, .aliados .tags .ini { width: 22px; height: 22px; } .aliados .tags li { padding-left: 6px; } }
